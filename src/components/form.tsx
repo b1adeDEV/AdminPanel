@@ -56,7 +56,7 @@ export const Form = () => {
         });
     }
     const onHandlerPhoneChange = (e: ChangeEvent<HTMLInputElement>) => {
-        let phone = e.target.value.replace(/\D/g, '')
+        let phone = "+" + e.target.value.replace(/\D/g, '')
         SetContact({
             first_name:contact.first_name,
             last_name:contact.last_name,
@@ -75,7 +75,7 @@ export const Form = () => {
 
 
     const LoginPhoneHandler = (e: ChangeEvent<HTMLInputElement>)=> {
-        let phone = e.target.value.replace(/\D/g, '')
+        let phone = "+" + e.target.value.replace(/\D/g, '')
         SetLogin({
             phone:phone,
             password:login.phone
@@ -109,6 +109,7 @@ export const Form = () => {
                 console.log("Неправильный формат номера")
             }else {
                 try {
+                    console.log(login)
                     const res = await axios.post("http://86.107.45.208:81/api/login/",login);
                     localStorage.setItem('access', res.data.tokens.access);
                     localStorage.setItem('refresh', res.data.tokens.refresh);

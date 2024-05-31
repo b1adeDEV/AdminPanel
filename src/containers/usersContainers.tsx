@@ -58,8 +58,7 @@ export const UsersContainers = () => {
                refrechToken()
            }else {
                console.log(123)
-
-               // navigate({pathname:"/"})
+               navigate({pathname:"/"})
            }
        }
     }

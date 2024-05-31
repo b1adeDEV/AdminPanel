@@ -18,6 +18,12 @@
     background-color: gray;
 }
 
+
+:where(.css-dev-only-do-not-override-j9bb5n).ant-table-wrapper {
+    clear: both;
+    width: 1000px !important;
+}
+
 .hub {
     width: 200px;
     display: flex;
