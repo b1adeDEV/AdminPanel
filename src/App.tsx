@@ -7,8 +7,8 @@ function App() {
     <>
       <BrowserRouter>
           <Routes>
-              <Route path={"/"} element={<Form/>} />s
-              <Route path={"/users"} element={<UsersContainers/>} />
+              <Route path={"https://b1adedev.github.io/AdminPanel/"} element={<Form/>} />s
+              <Route path={"https://b1adedev.github.io/AdminPanel/users"} element={<UsersContainers/>} />
           </Routes>
       </BrowserRouter>
     </>
