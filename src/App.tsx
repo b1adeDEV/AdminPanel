@@ -7,8 +7,8 @@ function App() {
     <>
       <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
-              <Route path={"/hub"} element={<Form/>} />s
-              <Route path={"/hub/users"} element={<UsersContainers/>} />
+          <Route path={"/"} element={<Form/>} />
+              <Route path={"/users"} element={<UsersContainers/>} />
           </Routes>
       </BrowserRouter>
     </>
