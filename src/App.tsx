@@ -5,10 +5,10 @@ import {Form} from "./components/form.tsx";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
-              <Route path={"/"} element={<Form/>} />s
-              <Route path={"/users"} element={<UsersContainers/>} />
+              <Route path={"/hub"} element={<Form/>} />s
+              <Route path={"/hub/users"} element={<UsersContainers/>} />
           </Routes>
       </BrowserRouter>
     </>
