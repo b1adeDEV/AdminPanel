@@ -1,6 +1,4 @@
 import "./Form.css"
-import {MdPeople, MdPhoneEnabled} from "react-icons/md";
-import {FaLock} from "react-icons/fa";
 import {ChangeEvent, useEffect, useRef, useState} from "react";
 import IMask from 'imask';
 import {NewForm} from "./NewForm.tsx";
@@ -31,6 +29,7 @@ export const Form = () => {
                 mask: '+{7}(000)000-00-00',
             };
             IMask(phoneRef.current, maskOptions);
+            // @ts-ignore
             IMask(logPhoneRef.current, maskOptions);
         }
     }, []);
@@ -115,7 +114,7 @@ export const Form = () => {
                     localStorage.setItem('refresh', res.data.tokens.refresh);
                     navigate({pathname:"/users"})
                 } catch (error) {
-                    let a:any = error
+
                 }
             }
         }

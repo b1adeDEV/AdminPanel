@@ -26,7 +26,7 @@ export const UsersContainers = () => {
                 localStorage.setItem('access', res.data.access);
                 localStorage.setItem('refresh', res.data.refresh);
                 AllUsers()
-            }catch(error){
+            }catch(error:any){
                 if(error.response.data.detail == "Token is invalid or expired"){
                     navigate({pathname:"/"})
                 }
@@ -53,7 +53,7 @@ export const UsersContainers = () => {
                }
            });
            setUsers(a)
-       }catch(error) {
+       }catch(error:any) {
            if (error.response.status === 401) {
                refrechToken()
            }else {
