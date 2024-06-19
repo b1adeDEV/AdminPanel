@@ -78,7 +78,7 @@ export const Form = () => {
         let phone = "+" + e.target.value.replace(/\D/g, '')
         SetLogin({
             phone:phone,
-            password:login.phone
+            password:login.password
         })
     }
     const LoginPasswordHandler = (e: ChangeEvent<HTMLInputElement>)=> {
