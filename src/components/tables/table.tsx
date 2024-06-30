@@ -1,17 +1,13 @@
 import {Table, TableColumnsType} from "antd";
 
 interface DataType {
-    key: React.Key;
+    key: string;
     name: string;
     age: number;
     address: string;
 }
 
 const columns: TableColumnsType<DataType> = [
-    {
-        title: 'UUID',
-        dataIndex: 'uuid',
-    },
     {
         title: 'Phone',
         dataIndex: 'phone',
@@ -32,13 +28,11 @@ type TProps = {
 }
 
 const Tables = (props:TProps) => {
-
     const data = props.data
-
     return(
-        <>
+        <div className={"table"}>
             <Table columns={columns} dataSource={data} size="middle" />
-        </>
+        </div>
     )
 };
 

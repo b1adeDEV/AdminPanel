@@ -1,0 +1,39 @@
+.modalSecret {
+    color: white;
+    margin-top: 50%;
+    border-radius: 15px;
+    justify-content: center;
+    width: 400px;
+    height: 200px;
+    backdrop-filter: blur(5px);
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalSecretGroup {
+    display: flex;
+    width: 250px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalSecretGroup>input {
+    padding: 0 0 0 10px;
+}
+
+.modalSecretGroup>button {
+    width: 100px;
+    height: 30px;
+    text-transform: none;
+    padding:0;
+    margin: 10px 0 0 10px;
+    scale: 1;
+}
+.modalSecretGroup>button:hover {
+    scale: 1;
+    cursor: pointer;
+}

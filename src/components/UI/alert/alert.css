@@ -1,0 +1,41 @@
+.alertError {
+    position: absolute;
+    top: 20px;
+    left: 39%;
+    height: 50px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    color: #721c24;
+    background-color: #f8d7da;
+    width: 450px;
+    padding: 5px 2px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 5;
+}
+.alertError>p {
+    margin-top: 15px;
+    scale: 3;
+    margin-right: 10px;
+}
+.alertError>div>h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.alertError>div>p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.alertError>button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 8px;
+    scale: 2;
+    margin-left: 20px;
+}

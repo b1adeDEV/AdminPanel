@@ -9,13 +9,10 @@
 * {
     margin: 0;
 }
-.container {
-    /*border: 1px solid black;*/
-    display: flex;
-    flex-direction: column;
-}
 :root {
-    background-color: gray;
+    background-image: url("https://i.pinimg.com/originals/47/55/58/47555821639f976984bef4371ec30bdf.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 
@@ -40,46 +37,35 @@
     margin: 10% auto;
 }
 
-.alertError {
-    position: absolute;
-    top: 20px;
-    left: 35%;
-    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
-    color: #721c24;
-    background-color: #f8d7da;
-    width: 400px;
-    padding: 5px 2px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    opacity: 1;
-    transition: 1s;
-}
-.alertError>p {
-    scale: 2;
-}
-.alertError>div>h3 {
-    margin: 0;
-    font-size: 25px;
-}
-
-.alertError>div>p {
-    margin: 0;
-    font-size: 15px;
-}
-
-.alertError>button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin-top: 8px;
-    margin-left: 40px;
-    scale: 1.2;
-}
-
 .none {
     opacity: 0;
     height: 0;
     top: -20px;
+}
+
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60% {
+        transform: translateX(-10px);
+    }
+    40%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+.shake {
+    animation: shake 0.05s steps(10) infinite; /* Уменьшили время одного цикла анимации */
+}
+
+.shake-active {
+    animation: shake 0.05s steps(10) infinite; /* Уменьшили время одного цикла анимации */
+    animation-duration: 0.5s; /* Общая длительность анимации остается 2 секунды */
+    animation-iteration-count: 1;
+}
+
+.table {
+    margin-top: 100px;
 }
