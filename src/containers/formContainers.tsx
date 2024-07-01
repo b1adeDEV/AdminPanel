@@ -20,7 +20,7 @@ export const FormContainers = () => {
     const [secretKey, setSecretKey] = useState<string>("");
     const [registerForm, setRegister] = useState<boolean>(false);
     const navigate=useNavigate()
-    useHotkeys('ctrl+alt+1', () => adminPages(), [])
+    useHotkeys(import.meta.env.VITE_REACT_APP_COMBINATION, () => adminPages(), [])
     useEffect(() => {
         if (logPhoneRef.current) {
             const maskOptions = {
@@ -70,7 +70,7 @@ export const FormContainers = () => {
         setSecretKey(e.target.value);
     }
     const checkSecretKey = () => {
-        if(secretKey == "stas"){
+        if(secretKey == import.meta.env.VITE_REACT_APP_SECRET_KEY){
             setSecretKey("")
             setRegister(true)
         }else {

@@ -12,29 +12,13 @@
 :root {
     background-image: url("https://i.pinimg.com/originals/47/55/58/47555821639f976984bef4371ec30bdf.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
 }
 
 
 :where(.css-dev-only-do-not-override-j9bb5n).ant-table-wrapper {
     clear: both;
     width: 1000px !important;
-}
-
-.hub {
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    scale: 1.5;
-    margin: 50px auto;
-}
-.form {
-    background-color: white;
-    width: 700px;
-    padding: 20px 5px;
-    border-radius: 15px;
-    margin: 10% auto;
 }
 
 .none {
